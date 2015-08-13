@@ -4,6 +4,7 @@ Tags:
   <%= link_to tag.name, tag_path(tag) %>
 <% end %>
 </p>
+<p> <%= image_tag @article.image.url(:medium) %></p>
 <p><%= @article.body %></p>
 <p>
 <p> <%= link_to "delete", article_path(@article), method: :delete,
